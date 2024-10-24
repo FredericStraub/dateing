@@ -16,5 +16,7 @@ logs
 # Netlify cache and build files
 .netlify/
 
+netlify.toml
+
 # Ignore functions dependencies if not needed
 netlify/functions/node_modules/

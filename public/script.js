@@ -3,7 +3,7 @@ const gif = document.getElementById('gif');
 const question = document.querySelector('.question');
 const yesButton = document.getElementById('yesButton');
 const noButton = document.getElementById('noButton');
-
+let noClickCount = 0;
 noButton.addEventListener('click', () => {
   // Move the "No" button to a random position
   const maxX = window.innerWidth - noButton.offsetWidth;
@@ -12,6 +12,14 @@ noButton.addEventListener('click', () => {
   noButton.style.position = 'absolute';
   noButton.style.left = `${Math.random() * maxX}px`;
   noButton.style.top = `${Math.random() * maxY}px`;
+  noClickCount++;
+
+  // Check if 'No' button has been clicked 10 times
+  if (noClickCount === 10) {
+    // Change the text above the 'Yes' button
+    question.textContent = 'Du solltest langsam wirklich ja drücken';
+    gif.src= "https://media.tenor.com/eL8GIMHWbFAAAAAi/bubu-dudu.gif"
+  }
 });
 
 yesButton.addEventListener('click', () => {
