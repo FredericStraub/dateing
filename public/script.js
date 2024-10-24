@@ -15,13 +15,13 @@ noButton.addEventListener('click', () => {
   noClickCount++;
 
   // Check if 'No' button has been clicked 10 times
-  if (noClickCount === 10) {
+  if (noClickCount === 5) {
     // Change the text above the 'Yes' button
     question.textContent = 'Du solltest langsam wirklich ja drücken';
     gif.src= "https://media.tenor.com/eL8GIMHWbFAAAAAi/bubu-dudu.gif"
   }
 
-  if (noClickCount === 20) {
+  if (noClickCount === 10) {
     // Change the text above the 'Yes' button
     question.textContent = 'Magst du mich gar nicht? :c';
     gif.src= "https://media.tenor.com/QOzMqPvW8PUAAAAi/love-you.gif"
