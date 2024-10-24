@@ -44,7 +44,7 @@ body {
   height: auto;
   margin-bottom: 0; /* Adjusted as per your comment */
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
 }
 
 .question {
